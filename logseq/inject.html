@@ -1,3 +1,6 @@
+
+<!-- 脚本注入 -->
+
 <!-- 评论系统放置在主内容区域 -->
 <script>
     var container = document.getElementById('main-content-container');
@@ -7,21 +10,29 @@
     element.classList.add('giscus');
 	container.appendChild(element);
 </script>
+
+
+
 <!-- 评论系统 -->
 <script src="https://giscus.app/client.js"
-        data-repo="fishyer/MyLogseq-Discussions"
-        data-repo-id="R_kgDOHTQ4JA"
-        data-category="General"
-        data-category-id="DIC_kwDOHTQ4JM4CO_qN"
-        data-mapping="pathname"
+        data-repo="lingkuma/kumas_NoteBook"
+        data-repo-id="R_kgDOR7TiFA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOR7TiFM4C6ROf"
+        data-mapping="title"
+        data-strict="0"
         data-reactions-enabled="1"
         data-emit-metadata="0"
         data-input-position="bottom"
-        data-theme="light"
+        data-theme="preferred_color_scheme"
         data-lang="zh-CN"
+        data-loading="lazy"
         crossorigin="anonymous"
         async>
 </script>
+
+
+
 <!-- SPA 评论系统刷新问题 -->
 <script>
     history.pushState = (f => function pushState() {
@@ -54,6 +65,9 @@
         console.debug("try refresh giscus:", title);
     }, false);
 </script>
+
+
+
 <!-- 评论系统主题随logseq变化 -->
 <script>
     localStorage.setItem = (f => function setItem() {
@@ -84,3 +98,14 @@
         }
     });
 </script>
+
+
+<!-- 网页icons修改 -->
+<script>
+var links = document.querySelectorAll("link[rel='shortcut icon'], link[rel='apple-touch-icon']");
+
+for (var i = 0; i < links.length; i++) {
+    links[i].href = 'https://fastly.jsdelivr.net/gh/lingkuma/LingKuma@main/src/icons/icon64.png';
+}
+</script>
+
