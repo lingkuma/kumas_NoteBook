@@ -23,6 +23,12 @@ jobs:
       - uses: actions/checkout@v4
       - name: Logseq Publish 🚩
         uses: logseq/publish-spa@main
+      - name: Copy graph assets
+        run: |
+          if [ -d assets ]; then
+            mkdir -p www/assets
+            cp -a assets/. www/assets/
+          fi
       - name: Inject Script
         run: sed -i "s#</body>#$( cat logseq/inject.html | tr '\n' ' ' | sed 's#&#\\&#g' )</body>#" www/index.html
       - name: add a nojekyll file
