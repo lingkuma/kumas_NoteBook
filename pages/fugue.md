@@ -1,3 +1,6 @@
 -
 - 如何部署一个 [[Python]] 项目
-	-
+	- https://res.cloudinary.com/dux7dnl5b/image/upload/v1775535419/bwt5e47omuiubyrae1q9.png
+-
+-
+-
