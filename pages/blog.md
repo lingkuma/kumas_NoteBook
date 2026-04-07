@@ -1,5 +1,6 @@
 -
 - # 如何发布同样的blog？
+  collapsed:: true
 	- 一键安装部署
 	  logseq.order-list-type:: number
 		- fork本项目并下载到本地
@@ -39,6 +40,8 @@
 		  collapsed:: true
 			- ![PixPin_2026-04-07_13-36-50.png](assets/PixPin_2026-04-07_13-36-50_1775540214697_0.png)
 			  logseq.order-list-type:: number
+-
+-
 - # 进阶脚本注入：`评论区`和`icons 图标`
   collapsed:: true
 	- 评论区设置
@@ -98,6 +101,4 @@
 			- ![PixPin_2026-04-07_13-20-36.png](assets/PixPin_2026-04-07_13-20-36_1775539253340_0.png)
 			  logseq.order-list-type:: number
 		-
--
--
 -
