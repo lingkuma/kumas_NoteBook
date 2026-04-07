@@ -1,6 +1,8 @@
 -
 -
-- 技巧
+- # 技巧
+	- [[启动命令]] 中可以使用 `&&` 来连接多条命令
+		- `git config --global --add safe.directory /workspace  && python app.py`
 -
 -
 - # 部署
