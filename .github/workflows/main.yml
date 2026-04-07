@@ -27,7 +27,7 @@ jobs:
         run: |
           if [ -d assets ]; then
             mkdir -p www/assets
-            cp -a assets/. www/assets/
+            rsync -a --exclude 'post-commit' assets/ www/assets/
           fi
       - name: Inject Script
         run: sed -i "s#</body>#$( cat logseq/inject.html | tr '\n' ' ' | sed 's#&#\\&#g' )</body>#" www/index.html
